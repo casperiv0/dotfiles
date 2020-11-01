@@ -1,0 +1,122 @@
+{
+    "Create Express API": {
+        "scope": "javascript",
+        "prefix": "expapi",
+        "body": [
+            "const express = require(\"express\");",
+            "const helmet = require(\"helmet\");",
+            "const cors = require(\"cors\");",
+            "const app = express()",
+            "const api = require(\"./routes/api\")",
+            "",
+            "app.use(express.json())",
+            "app.use(cors());",
+            "app.use(helmet());",
+            "app.use(\"/api\", api);",
+            "",
+            "",
+            "app.listen(port, () => console.log(`Running app on ${port}`));",
+            "$0"
+        ],
+        "description": "Creates an express api app"
+    },
+    "Create express app": {
+        "scope": "javascript",
+        "prefix": "express",
+        "body": [
+            "const express = require(\"express\");",
+            "const helmet = require(\"helmet\");",
+            "const cors = require(\"cors\");",
+            "const app = express()",
+            "const port = process.env.PORT || 3001",
+            "",
+            "app.use(express.json())",
+            "app.use(cors());",
+            "app.use(helmet());",
+            "",
+            "",
+            "app.listen(port, () => console.log(`Running app on ${port}`));",
+            "$0"
+        ],
+        "description": "Creates an express app"
+    },
+    "Discord.JS command": {
+        "scope": "javascript",
+        "prefix": "cmd",
+        "body": [
+            "module.exports = {",
+            "name: \"${name}\",",
+            "description: \"${description}\",",
+            "category: \"${category}\",",
+            "execute(bot, message, args) {",
+            "${cmd}",
+            "}",
+            "}"
+        ]
+    },
+    "Css default styles": {
+        "scope": "css",
+        "prefix": "css",
+        "body": [
+            "*,",
+            "*::after,",
+            "*::before {",
+            "  padding: 0;",
+            "  margin: 0;",
+            "  box-sizing: border-box;",
+            "}"
+        ]
+    },
+    "Express router": {
+        "scope": "javascript",
+        "prefix": "erouter",
+        "body": [
+            "const router = require(\"express\").Router();",
+            "",
+            "$0",
+            "",
+            "module.exports = router;"
+        ]
+    },
+    "import React": {
+        "scope": "javascriptreact, javascript",
+        "prefix": "react",
+        "body": [
+            "import React from \"react\";"
+        ]
+    },
+    "Typescript Import react": {
+        "scope": "typescript, typescriptreact",
+        "prefix": "react",
+        "body": [
+            "import * as React from \"react\";"
+        ]
+    },
+    "Import Styled Components": {
+        "scope": "javascript, javascriptreact, typescript, typescriptreact",
+        "prefix": "styled",
+        "body": "import styled from \"styled-components\";"
+    },
+    "Import React Helmet": {
+        "scope": "javascript, javascriptreact, typescript, typescriptreact",
+        "prefix": "helmet",
+        "body": "import { Helmet, HelmetProvider } from \"react-helmet-async\";"
+    },
+    "Environment variable": {
+        "scope": "javascript, javascriptreact, typescript, typescriptreact",
+        "prefix": "env",
+        "body": "process.env.${0}",
+        "description": "Env"
+    },
+    "Document title": {
+        "scope": "javascript, javascriptreact, typescript, typescriptreact",
+        "prefix": "title",
+        "body": "document.title = \"${0}\"",
+        "description": "Set Document Title"
+    },
+    "useState snippet": {
+        "prefix": "rus",
+        "body": "const [${1}, set${1/(^[a-zA-Z])(.*)/${1:/upcase}${2}/}] = useState(${2:default${1/(^[a-zA-Z])(.*)/${1:/upcase}${2}/}});",
+        "description": "use state but it camel cases"
+    }
+}

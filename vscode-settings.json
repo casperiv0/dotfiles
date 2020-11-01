@@ -1,0 +1,35 @@
+{
+  "workbench.iconTheme": "material-icon-theme",
+  "window.zoomLevel": 0,
+  "editor.fontSize": 18,
+  "workbench.colorTheme": "GitHub Dark",
+  "eslint.enable": true,
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "eslint.codeActionsOnSave.mode": "problems",
+  "vetur.format.defaultFormatter.html": "prettier",
+  "liveServer.settings.donotShowInfoMsg": true,
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "cSpell.userWords": ["Notey", "Repos", "caspertheghost", "cidx", "reged"],
+  "discord.workspaceElapsedTime": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "liveServer.settings.donotVerifyTags": true,
+  "discord.detailsEditing": "💻 Editing {filename} in {workspace}",
+  "discord.lowerDetailsEditing": "📄 On line {currentline} of {totallines}",
+  "editor.fontFamily": "Dank Mono",
+  "scm.providerCountBadge": "auto",
+  "material-icon-theme.showWelcomeMessage": false,
+  "files.associations": {
+    ".env": "dotenv"
+  },
+  "stories.username": "meadowlark_bronze"
+}
