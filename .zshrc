@@ -31,7 +31,9 @@ alias zsh="code ~/.zshrc"
 alias work="cd /home/Projects/work/"
 
 # show my name bc why not :D
-cfonts "CASPER" --align "center"
+cfonts "CASPER" --align "left"
 
 # start in my directory
 cd /home/casper
+
+source /home/casper/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
