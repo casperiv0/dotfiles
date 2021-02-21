@@ -1,7 +1,7 @@
 {
   "workbench.iconTheme": "material-icon-theme",
   "window.zoomLevel": 0,
-  "editor.fontSize": 18,
+  "editor.fontSize": 17,
   "workbench.colorTheme": "GitHub Dark",
   "eslint.enable": true,
   "[jsonc]": {
@@ -19,17 +19,29 @@
   "[json]": {
     "editor.defaultFormatter": "vscode.json-language-features"
   },
-  "cSpell.userWords": ["Notey", "Repos", "caspertheghost", "cidx", "reged"],
+  "[plaintext]": {
+    "editor.defaultFormatter": "raynigon.nginx-formatter"
+  },
+  "[xml]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
   "discord.workspaceElapsedTime": true,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "discord.largeImage": "✨ Editing a {LANG} file",
+  "discord.largeImageIdling": "⏱ Idling",
+  "editor.suggest.showStatusBar": true,
   "liveServer.settings.donotVerifyTags": true,
-  "discord.detailsEditing": "💻 Editing {filename} in {workspace}",
-  "discord.lowerDetailsEditing": "📄 On line {currentline} of {totallines}",
-  "editor.fontFamily": "Dank Mono",
+  "discord.detailsEditing": "💻 Editing {file_name} in {workspace}",
+  "discord.lowerDetailsEditing": "📄 line: {current_line}/{total_lines} - Branch: {git_branch} - {file_size}",
+  "editor.fontFamily": "Fira Code",
   "scm.providerCountBadge": "auto",
   "material-icon-theme.showWelcomeMessage": false,
+  "prettier.printWidth": 100,
   "files.associations": {
     ".env": "dotenv"
   },
-  "stories.username": "meadowlark_bronze"
+ 
 }
