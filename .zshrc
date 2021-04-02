@@ -22,13 +22,16 @@ HIST_STAMPS="dd/mm/yyyy"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git zsh-autosuggestions)
+plugins=(git zsh-autosuggestions zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
 
 # Example aliases
 alias zsh="code ~/.zshrc"
 alias work="cd /home/Projects/work/"
+alias dev="npm run dev"
+alias build="npm run build"
+alias start="npm start"
 
 # show my name bc why not :D
 cfonts "CASPER" --align "left"
@@ -36,4 +39,3 @@ cfonts "CASPER" --align "left"
 # start in my directory
 cd /home/casper
 
-source /home/casper/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
