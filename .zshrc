@@ -29,9 +29,10 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 alias zsh="code ~/.zshrc"
 alias work="cd /home/Projects/work/"
-alias dev="npm run dev"
-alias build="npm run build"
-alias start="npm start"
+alias dev="clear && npm run dev"
+alias build="clear && npm run build"
+alias start="clear && npm start"
+alias dc="docker-compose up"
 
 # show my name bc why not :D
 cfonts "CASPER" --align "left"
