@@ -1,3 +1,3 @@
 # dotfiles
 
-My personal dotfiles (Windows)
+My personal dotfiles (Windows + WSL2)
