@@ -1,3 +1,4 @@
+export GPG_TTY=$(tty)
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
@@ -32,11 +33,15 @@ alias work="cd /home/Projects/work/"
 alias dev="clear && npm run dev"
 alias build="clear && npm run build"
 alias start="clear && npm start"
-alias dc="docker-compose up"
+alias dc="clear && docker-compose up"
+alias dcd="clear && docker-compose down"
+
+alias gs="git status"
+alias ga="git add ."
+
 
 # show my name bc why not :D
 cfonts "CASPER" --align "left"
 
 # start in my directory
 cd /home/casper
-
