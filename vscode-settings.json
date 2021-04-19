@@ -1,9 +1,7 @@
 {
   "workbench.iconTheme": "material-icon-theme",
-  "window.zoomLevel": 0,
   "editor.fontSize": 17,
   "workbench.colorTheme": "GitHub Dark",
-  "eslint.enable": true,
   "[jsonc]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
@@ -11,7 +9,6 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "eslint.codeActionsOnSave.mode": "problems",
-  "vetur.format.defaultFormatter.html": "prettier",
   "liveServer.settings.donotShowInfoMsg": true,
   "[javascriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
@@ -19,16 +16,12 @@
   "[json]": {
     "editor.defaultFormatter": "vscode.json-language-features"
   },
-  "[plaintext]": {
-    "editor.defaultFormatter": "raynigon.nginx-formatter"
-  },
   "[xml]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[typescript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "discord.workspaceElapsedTime": true,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "discord.largeImage": "✨ Editing a {LANG} file",
   "discord.largeImageIdling": "⏱ Idling",
@@ -43,5 +36,31 @@
   "files.associations": {
     ".env": "dotenv"
   },
- 
+  "cSpell.userWords": [
+    "Hoverable",
+    "URL's",
+    "cadv",
+    "caspertheghost",
+    "citizenfx",
+    "nocheck",
+    "prefetch",
+    "zyndicate"
+  ],
+  "editor.linkedEditing": true,
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "extensions.ignoreRecommendations": true,
+  "javascript.preferences.quoteStyle": "double",
+  "typescript.preferences.quoteStyle": "double",
+  "workbench.welcomePage.hiddenCategories": ["Setup", "Beginner"],
+  "telemetry.enableTelemetry": false,
+  "telemetry.enableCrashReporter": false,
+  "redhat.telemetry.enabled": false,
+  "todo-tree.tree.showScanModeButton": false,
+  "files.insertFinalNewline": true,
+  "files.trimFinalNewlines": true,
+  "files.trimTrailingWhitespace": true,
+  "files.eol": "\n",
+  "remote.WSL.server.connectThroughLocalhost": true
 }
