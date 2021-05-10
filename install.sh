@@ -60,3 +60,11 @@ cd dotfiles && mv .zshrc ~/.zshrc
 cd ~ && rm -rf dotfiles
 
 echo "\nINFO: Installed correct .zshrc\n"
+
+# install brew
+
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
+# install github cli
+
+brew install gh
