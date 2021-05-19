@@ -90,3 +90,9 @@ sudo apt-get update
  sudo apt-get install docker-ce docker-ce-cli containerd.io
  
  echo "\nInstalled Docker\n"
+ 
+ # set git aliases
+git config --global alias.ch checkout
+git config --global alias.st status
+ 
+ 
