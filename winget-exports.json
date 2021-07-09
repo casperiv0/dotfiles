@@ -1,22 +1,16 @@
 {
 	"$schema" : "https://aka.ms/winget-packages.schema.2.0.json",
-	"CreationDate" : "2021-06-30T15:59:44.277-00:00",
+	"CreationDate" : "2021-07-09T19:52:10.408-00:00",
 	"Sources" : 
 	[
 		{
 			"Packages" : 
 			[
 				{
-					"PackageIdentifier" : "ModernFlyouts.ModernFlyouts"
-				},
-				{
 					"PackageIdentifier" : "BraveSoftware.BraveBrowser"
 				},
 				{
 					"PackageIdentifier" : "Canonical.Ubuntu"
-				},
-				{
-					"PackageIdentifier" : "Discord.Discord"
 				},
 				{
 					"PackageIdentifier" : "Discord.DiscordCanary"
@@ -28,13 +22,7 @@
 					"PackageIdentifier" : "Git.Git"
 				},
 				{
-					"PackageIdentifier" : "Microsoft.Edge"
-				},
-				{
 					"PackageIdentifier" : "Microsoft.WindowsTerminalPreview"
-				},
-				{
-					"PackageIdentifier" : "Microsoft.WindowsTerminal"
 				},
 				{
 					"PackageIdentifier" : "Mozilla.Firefox"
@@ -50,15 +38,9 @@
 				},
 				{
 					"PackageIdentifier" : "RARLab.WinRAR"
-				},
+				},²
 				{
-					"PackageIdentifier" : "SlackTechnologies.Slack"
-				},
-				{
-					"PackageIdentifier" : "ApacheFriends.Xampp"
-				},
-				{
-					"PackageIdentifier" : "GitHub.cli"
+					"PackageIdentifier" : "OpenJS.NodeJS"
 				},
 				{
 					"PackageIdentifier" : "Python.Python.3"
@@ -73,28 +55,16 @@
 					"PackageIdentifier" : "Microsoft.VC++2012Redist-x86"
 				},
 				{
-					"PackageIdentifier" : "Python.Python.3"
-				},
-				{
-					"PackageIdentifier" : "Microsoft.PowerToys"
+					"PackageIdentifier" : "Microsoft.PowerShell.Preview"
 				},
 				{
 					"PackageIdentifier" : "Microsoft.VisualStudioCode"
 				},
 				{
-					"PackageIdentifier" : "EpicGames.EpicGamesLauncher"
+					"PackageIdentifier" : "Microsoft.PowerToys"
 				},
 				{
-					"PackageIdentifier" : "Microsoft.PowerShell.Preview"
-				},
-				{
-					"PackageIdentifier" : "Nvidia.GeForceExperience"
-				},
-				{
-					"PackageIdentifier" : "OpenJS.NodeJS"
-				},
-				{
-					"PackageIdentifier" : "Microsoft.UpdateAssistant"
+					"PackageIdentifier" : "GitHub.cli"
 				},
 				{
 					"PackageIdentifier" : "Microsoft.VC++2012Redist-x64"
