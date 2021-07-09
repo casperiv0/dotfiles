@@ -40,8 +40,8 @@ sh -c "$(wget -qO- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tool
 echo "\nINFO: Installed oh-my-zsh\n"
 
 # build essentials
-sudo apt install build-essential
-sudo apt-get install gcc g++ make
+sudo apt install build-essential -y
+sudo apt install gcc g++ make -y
 
 echo "\nINFO: Installed build-essential\n"
 
@@ -55,7 +55,7 @@ cd ~
 
 git clone git@github.com:Dev-CasperTheGhost/dotfiles.git
 
-cd dotfiles && mv .zshrc ~/.zshrc
+sudo cd dotfiles && cp .zshrc ~/.zshrc
 
 cd ~ && rm -rf dotfiles
 
@@ -82,17 +82,18 @@ sudo apt-get update
     curl \
     gnupg \
     lsb-release
-   
+
  curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
- 
+
  sudo apt-get update
 
  sudo apt-get install docker-ce docker-ce-cli containerd.io
- 
+
  echo "\nInstalled Docker\n"
- 
- # set git aliases
+
+# git stuff
 git config --global alias.ch checkout
 git config --global alias.st status
- 
- 
+
+git config --global core.editor code
+git config --global merge.tool code

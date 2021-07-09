@@ -1,4 +1,6 @@
-## Firefox extensions 
+# Firefox extensions
+
+These are all the Firefox extensions I use.
 
 - [ClearURLs by Kevin R.](https://addons.mozilla.org/en-US/firefox/addon/clearurls/)
 - [Cookie AutoDelete by CAD Team](https://addons.mozilla.org/en-US/firefox/addon/cookie-autodelete/)

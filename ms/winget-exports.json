@@ -1,10 +1,10 @@
 {
 	"$schema" : "https://aka.ms/winget-packages.schema.2.0.json",
 	"CreationDate" : "2021-07-09T19:52:10.408-00:00",
-	"Sources" : 
+	"Sources" :
 	[
 		{
-			"Packages" : 
+			"Packages" :
 			[
 				{
 					"PackageIdentifier" : "BraveSoftware.BraveBrowser"
@@ -38,7 +38,7 @@
 				},
 				{
 					"PackageIdentifier" : "RARLab.WinRAR"
-				},²
+				},
 				{
 					"PackageIdentifier" : "OpenJS.NodeJS"
 				},
@@ -70,7 +70,7 @@
 					"PackageIdentifier" : "Microsoft.VC++2012Redist-x64"
 				}
 			],
-			"SourceDetails" : 
+			"SourceDetails" :
 			{
 				"Argument" : "https://winget.azureedge.net/cache",
 				"Identifier" : "Microsoft.Winget.Source_8wekyb3d8bbwe",

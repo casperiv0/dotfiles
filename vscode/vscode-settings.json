@@ -53,7 +53,10 @@
   "extensions.ignoreRecommendations": true,
   "javascript.preferences.quoteStyle": "double",
   "typescript.preferences.quoteStyle": "double",
-  "workbench.welcomePage.hiddenCategories": ["Setup", "Beginner"],
+  "workbench.welcomePage.hiddenCategories": [
+    "Setup",
+    "Beginner"
+  ],
   "telemetry.enableTelemetry": false,
   "telemetry.enableCrashReporter": false,
   "redhat.telemetry.enabled": false,
