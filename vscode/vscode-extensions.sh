@@ -3,7 +3,10 @@
 
 PACKAGES=(
    bierner.markdown-preview-github-styles
+   bradlc.vscode-tailwindcss
+   christian-kohler.npm-intellisense
    christian-kohler.path-intellisense
+   CoenraadS.bracket-pair-colorizer
    DavidAnson.vscode-markdownlint
    dbaeumer.vscode-eslint
    drcallaway.vscode-surround-with
@@ -17,11 +20,16 @@ PACKAGES=(
    jeremyrajan.vscode-lebab
    kamikillerto.vscode-colorize
    meganrogge.template-string-converter
+   ms-vscode.live-server
    ms-vscode.vscode-typescript-next
    naumovs.color-highlight
+   octref.vetur
    pranaygp.vscode-css-peek
+   Prisma.prisma
    redhat.vscode-xml
    riazxrazor.html-to-jsx
+   sdras.vue-vscode-extensionpack
+   silvenon.mdx
    streetsidesoftware.code-spell-checker
    tamj0rd2.ts-quickfixes-extension
    WakaTime.vscode-wakatime
@@ -29,4 +37,4 @@ PACKAGES=(
    Zignd.html-css-class-completion
 )
 
-code --install-extension ${PACKAGES[@]}
+sudo code --install-extension ${PACKAGES[@]}

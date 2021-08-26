@@ -1,15 +1,55 @@
 {
+  /**
+   Editor stuff
+  */
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
   "workbench.iconTheme": "material-icon-theme",
-  "editor.fontSize": 17,
+  "editor.copyWithSyntaxHighlighting": false,
+  "diffEditor.ignoreTrimWhitespace": false,
+  "workbench.editor.enablePreview": false,
+  "window.newWindowDimensions": "inherit",
   "workbench.colorTheme": "GitHub Dark",
+  "files.trimTrailingWhitespace": true,
+  "editor.fontFamily": "Fira Code",
+  "editor.fontSize": 17,
+  "editor.suggest.preview": true,
+
+  /**
+    Less "noise"
+  */
+  "workbench.tips.enabled": false,
+  "workbench.startupEditor": "none",
+  "editor.gotoLocation.multipleReferences": "goto",
+  "editor.gotoLocation.multipleDefinitions": "goto",
+  "editor.gotoLocation.multipleDeclarations": "goto",
+  "workbench.editor.enablePreviewFromQuickOpen": false,
+  "editor.gotoLocation.multipleImplementations": "goto",
+  "editor.gotoLocation.multipleTypeDefinitions": "goto",
+
+  /**
+    Prettier
+  */
+  "prettier.trailingComma": "all",
+  "prettier.singleQuote": false,
+  "prettier.printWidth": 100,
+  "prettier.tabWidth": 2,
+  "prettier.semi": true,
+
+  /**
+   Discord presence
+  */
+  "discord.largeImage": "✨ Editing a {LANG} file",
+  "discord.largeImageIdling": "⏱ Idling",
+  "editor.suggest.showStatusBar": true,
+  "discord.detailsEditing": "💻 Editing {file_name} in {workspace}",
+  "discord.lowerDetailsEditing": "📄 line: {current_line}/{total_lines} - Branch: {git_branch} - {file_size}",
+
   "[jsonc]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "eslint.codeActionsOnSave.mode": "problems",
-  "liveServer.settings.donotShowInfoMsg": true,
   "[javascriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
@@ -22,17 +62,11 @@
   "[typescript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "discord.largeImage": "✨ Editing a {LANG} file",
-  "discord.largeImageIdling": "⏱ Idling",
-  "editor.suggest.showStatusBar": true,
-  "liveServer.settings.donotVerifyTags": true,
-  "discord.detailsEditing": "💻 Editing {file_name} in {workspace}",
-  "discord.lowerDetailsEditing": "📄 line: {current_line}/{total_lines} - Branch: {git_branch} - {file_size}",
-  "editor.fontFamily": "Fira Code",
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+
   "scm.providerCountBadge": "auto",
-  "material-icon-theme.showWelcomeMessage": false,
-  "prettier.printWidth": 100,
   "files.associations": {
     ".env": "dotenv"
   },
@@ -46,24 +80,19 @@
     "prefetch",
     "zyndicate"
   ],
+
   "editor.linkedEditing": true,
-  "[html]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
+  "eslint.codeActionsOnSave.mode": "problems",
   "extensions.ignoreRecommendations": true,
   "javascript.preferences.quoteStyle": "double",
   "typescript.preferences.quoteStyle": "double",
-  "workbench.welcomePage.hiddenCategories": [
-    "Setup",
-    "Beginner"
-  ],
+
+  "files.eol": "\n",
+  "remote.WSL.server.connectThroughLocalhost": true,
+
   "telemetry.enableTelemetry": false,
   "telemetry.enableCrashReporter": false,
   "redhat.telemetry.enabled": false,
-  "todo-tree.tree.showScanModeButton": false,
-  "files.insertFinalNewline": true,
-  "files.trimFinalNewlines": true,
-  "files.trimTrailingWhitespace": true,
-  "files.eol": "\n",
-  "remote.WSL.server.connectThroughLocalhost": true
+  "material-icon-theme.showWelcomeMessage": false,
+  "window.dialogStyle": "custom"
 }

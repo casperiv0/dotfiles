@@ -1,5 +1,15 @@
 sudo apt-get update
 
+
+sudo apt-get install \
+   apt-transport-https \
+   ca-certificates \
+   curl \
+   gnupg \
+   lsb-release \
+   ufw \
+   speedtest-cli
+
 sudo apt-get upgrade -y
 
 # install git
@@ -23,11 +33,10 @@ echo "\nINFO: Installed node and npm\n"
 node -v
 npm -v
 
-# install yarn
+# install global packages
 
-sudo npm i -g yarn
+sh -c "$(wget -qO- https://raw.githubusercontent.com/Dev-CasperTheGhost/dotfiles/main/npm/packages.sh)"
 
-echo "\nINFO: Installed yarn\n"
 
 # install zsh
 sudo apt install zsh
@@ -53,11 +62,7 @@ git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-m
 # setup .zshrc stuff
 cd ~
 
-git clone git@github.com:Dev-CasperTheGhost/dotfiles.git
-
-sudo cd dotfiles && cp .zshrc ~/.zshrc
-
-cd ~ && rm -rf dotfiles
+curl https://raw.githubusercontent.com/Dev-CasperTheGhost/dotfiles/main/.zshrc > ~/.zshrc
 
 echo "\nINFO: Installed correct .zshrc\n"
 
@@ -76,20 +81,13 @@ sudo apt-get remove docker docker-engine docker.io containerd runc
 
 sudo apt-get update
 
- sudo apt-get install \
-    apt-transport-https \
-    ca-certificates \
-    curl \
-    gnupg \
-    lsb-release
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
 
- curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
+sudo apt-get update
 
- sudo apt-get update
+sudo apt-get install docker-ce docker-ce-cli containerd.io
 
- sudo apt-get install docker-ce docker-ce-cli containerd.io
-
- echo "\nInstalled Docker\n"
+echo "\nInstalled Docker\n"
 
 # git stuff
 git config --global alias.ch checkout
