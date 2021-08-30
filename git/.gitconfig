@@ -1,0 +1,24 @@
+[alias]
+        ch = checkout
+        st = status
+
+[commit]
+        gpgsign = true
+
+[color "status"]
+        added = green bold
+        changed = yellow bold
+        untracked = cyan
+        branch = yellow black bold ul
+
+[init]
+        defaultBranch = main
+
+[gpg]
+        program = gpg
+
+[user]
+        name = Dev-CasperTheGhost
+        email = 53900565+Dev-CasperTheGhost@users.noreply.github.com
+        signingkey = 25660580B5C9FDC7
+
