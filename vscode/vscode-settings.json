@@ -3,6 +3,7 @@
    Editor stuff
   */
   "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.bracketPairColorization.enabled": true,
   "workbench.iconTheme": "material-icon-theme",
   "editor.copyWithSyntaxHighlighting": false,
   "diffEditor.ignoreTrimWhitespace": false,

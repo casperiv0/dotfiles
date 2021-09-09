@@ -95,3 +95,5 @@ git config --global alias.st status
 
 git config --global core.editor code
 git config --global merge.tool code
+
+sudo apt install ttf-mscorefonts-installer

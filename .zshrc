@@ -35,6 +35,8 @@ alias build="clear && npm run build"
 alias start="clear && npm start"
 alias dc="clear && docker-compose up"
 alias dcd="clear && docker-compose down"
+alias lint="clear && npm run lint"
+alias format="clear && npm run format"
 
 alias gs="git status"
 alias ga="git add ."
