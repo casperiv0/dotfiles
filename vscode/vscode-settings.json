@@ -66,10 +66,13 @@
   "[html]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-
+  "[prisma]": {
+    "editor.defaultFormatter": "Prisma.prisma"
+  },
   "scm.providerCountBadge": "auto",
   "files.associations": {
-    ".env": "dotenv"
+    ".env": "dotenv",
+    "*.md": "mdx"
   },
   "cSpell.userWords": [
     "Hoverable",
@@ -95,5 +98,7 @@
   "telemetry.enableCrashReporter": false,
   "redhat.telemetry.enabled": false,
   "material-icon-theme.showWelcomeMessage": false,
-  "window.dialogStyle": "custom"
+  "window.dialogStyle": "custom",
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "cSpell.language": "en,en-GB,en-US"
 }
