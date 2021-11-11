@@ -31,7 +31,7 @@
     ]
   },
   "CSS reset": {
-    "scope": "css",
+    "scope": "css,scss",
     "prefix": "css",
     "body": [
       "*,",
@@ -57,7 +57,9 @@
   "Typescript Import react": {
     "scope": "javascriptreact, javascript, typescript, typescriptreact",
     "prefix": "react",
-    "body": ["import * as React from \"react\";"]
+    "body": [
+      "import * as React from \"react\";"
+    ]
   },
   "Import Styled Components": {
     "scope": "javascript, javascriptreact, typescript, typescriptreact",

@@ -1,0 +1,42 @@
+{
+  "theme": "dark",
+  "backgroundUrl": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.pinimg.com%2Foriginals%2F8a%2Fab%2F03%2F8aab031f3c235b232d1550152f72541b.jpg&f=1&nofb=1",
+  "search": {
+    "show": false,
+    "engine": "https://duckduckgo.com?q=",
+    "newTab": true
+  },
+  "weather": {
+    "show": true,
+    "location": "Evergem",
+    "unit": "metric"
+  },
+  "positions": {
+    "greeting": 2,
+    "weather": 0
+  },
+  "date": {
+    "format": "MMM. do • HH:mm:ss"
+  },
+  "cursor": {
+    "enabled": true,
+    "timeout": 5
+  },
+  "bookmark": {
+    "bookmarks": [
+      {
+        "url": "https://music.apple.com/listen-now",
+        "faviconUrl": "https://preview.caspertheghost.me?url=https://apps.mzstatic.com/content/static-config/android/images/android_am_512.png"
+      },
+      {
+        "url": "https://github.com/dev-caspertheghost",
+        "faviconUrl": "https://preview.caspertheghost.me?url=https://github.githubassets.com/app-icon-512.png"
+      },
+      {
+        "url": "https://www.twitch.tv/jamiepinelive",
+        "faviconUrl": "https://preview.caspertheghost.me?url=https://static.twitchcdn.net/assets/favicon-32-e29e246c157142c94346.png"
+      }
+    ],
+    "newTab": false
+  }
+}

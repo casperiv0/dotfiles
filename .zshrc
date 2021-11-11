@@ -28,13 +28,13 @@ plugins=(git zsh-autosuggestions zsh-syntax-highlighting zsh-completions)
 source $ZSH/oh-my-zsh.sh
 
 # Example aliases
-alias zsh="code ~/.zshrc"
+# alias zsh="code ~/.zshrc"
 alias work="cd /home/Projects/work/"
 alias dev="clear && npm run dev"
 alias build="clear && npm run build"
 alias start="clear && npm start"
-alias dc="clear && docker-compose up"
-alias dcd="clear && docker-compose down"
+alias dc="clear && docker compose up"
+alias dcd="clear && docker compose down"
 alias lint="clear && npm run lint"
 alias format="clear && npm run format"
 

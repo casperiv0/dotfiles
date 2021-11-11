@@ -4,9 +4,10 @@
 PACKAGES=(
    bierner.markdown-preview-github-styles
    bradlc.vscode-tailwindcss
+   bungcip.better-toml
+   byCedric.vscode-expo
    christian-kohler.npm-intellisense
    christian-kohler.path-intellisense
-   CoenraadS.bracket-pair-colorizer
    DavidAnson.vscode-markdownlint
    dbaeumer.vscode-eslint
    drcallaway.vscode-surround-with
@@ -14,27 +15,26 @@ PACKAGES=(
    ecmel.vscode-html-css
    eg2.vscode-npm-script
    esbenp.prettier-vscode
-   foxundermoon.shell-format
    GitHub.vscode-pull-request-github
    GraphQL.vscode-graphql
+   heybourn.headwind
+   IronGeek.vscode-env
    jeremyrajan.vscode-lebab
-   kamikillerto.vscode-colorize
    meganrogge.template-string-converter
-   ms-vscode.live-server
-   ms-vscode.vscode-typescript-next
-   naumovs.color-highlight
-   octref.vetur
+   ms-azuretools.vscode-docker
    pranaygp.vscode-css-peek
    Prisma.prisma
-   redhat.vscode-xml
-   riazxrazor.html-to-jsx
-   sdras.vue-vscode-extensionpack
-   silvenon.mdx
+   ritwickdey.LiveServer
    streetsidesoftware.code-spell-checker
    tamj0rd2.ts-quickfixes-extension
    WakaTime.vscode-wakatime
    wix.vscode-import-cost
-   Zignd.html-css-class-completion
+   yzhang.markdown-all-in-one
+   GitHub.github-vscode-theme
+   usernamehw.errorlens
+   mikestead.dotenv
+   qwtel.sqlite-viewer
+   silvenon.mdx
 )
 
 sudo code --install-extension ${PACKAGES[@]}

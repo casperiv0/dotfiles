@@ -1,7 +1,4 @@
 {
-  /**
-   Editor stuff
-  */
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.bracketPairColorization.enabled": true,
   "workbench.iconTheme": "material-icon-theme",
@@ -12,12 +9,10 @@
   "workbench.colorTheme": "GitHub Dark",
   "files.trimTrailingWhitespace": true,
   "editor.fontFamily": "Fira Code",
-  "editor.fontSize": 17,
+  "editor.fontSize": 18,
   "editor.suggest.preview": true,
-
-  /**
-    Less "noise"
-  */
+  "editorHoverWidget.highlightForeground": true,
+  "html.completion.attributeDefaultValue": "doublequotes",
   "workbench.tips.enabled": false,
   "workbench.startupEditor": "none",
   "editor.gotoLocation.multipleReferences": "goto",
@@ -26,25 +21,16 @@
   "workbench.editor.enablePreviewFromQuickOpen": false,
   "editor.gotoLocation.multipleImplementations": "goto",
   "editor.gotoLocation.multipleTypeDefinitions": "goto",
-
-  /**
-    Prettier
-  */
   "prettier.trailingComma": "all",
   "prettier.singleQuote": false,
   "prettier.printWidth": 100,
   "prettier.tabWidth": 2,
   "prettier.semi": true,
-
-  /**
-   Discord presence
-  */
   "discord.largeImage": "✨ Editing a {LANG} file",
   "discord.largeImageIdling": "⏱ Idling",
   "editor.suggest.showStatusBar": true,
   "discord.detailsEditing": "💻 Editing {file_name} in {workspace}",
   "discord.lowerDetailsEditing": "📄 line: {current_line}/{total_lines} - Branch: {git_branch} - {file_size}",
-
   "[jsonc]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
@@ -74,31 +60,29 @@
     ".env": "dotenv",
     "*.md": "mdx"
   },
-  "cSpell.userWords": [
-    "Hoverable",
-    "URL's",
-    "cadv",
-    "caspertheghost",
-    "citizenfx",
-    "nocheck",
-    "prefetch",
-    "zyndicate"
-  ],
-
   "editor.linkedEditing": true,
   "eslint.codeActionsOnSave.mode": "problems",
   "extensions.ignoreRecommendations": true,
   "javascript.preferences.quoteStyle": "double",
   "typescript.preferences.quoteStyle": "double",
-
   "files.eol": "\n",
   "remote.WSL.server.connectThroughLocalhost": true,
-
   "telemetry.enableTelemetry": false,
   "telemetry.enableCrashReporter": false,
   "redhat.telemetry.enabled": false,
   "material-icon-theme.showWelcomeMessage": false,
   "window.dialogStyle": "custom",
   "typescript.updateImportsOnFileMove.enabled": "always",
-  "cSpell.language": "en,en-GB,en-US"
+  "cSpell.language": "en,en-GB,en-US",
+  "json.schemas": [
+    {
+      "name": "vscode-expo-manifest",
+      "url": "file:///home/casper/.vscode-server/data/User/globalStorage/bycedric.vscode-expo/manifest-43.0.0.json",
+      "fileMatch": [
+        "app.json",
+        "app.config.json"
+      ]
+    }
+  ],
+  "js/ts.implicitProjectConfig.strictNullChecks": true
 }
