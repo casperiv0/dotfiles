@@ -52,5 +52,25 @@
     {
         "key": "ctrl+shift+o",
         "command": "workbench.action.files.openFolder"
+    },
+    {
+        "key": "ctrl+alt+left",
+        "command": "-workbench.action.moveEditorToPreviousGroup"
+    },
+    {
+        "key": "ctrl+alt+left",
+        "command": "cursorWordPartLeft"
+    },
+    {
+        "key": "ctrl+shift+alt+left",
+        "command": "cursorWordPartLeftSelect"
+    },
+    {
+        "key": "ctrl+alt+right",
+        "command": "cursorWordPartRight"
+    },
+    {
+        "key": "ctrl+shift+alt+right",
+        "command": "cursorWordPartRightSelect"
     }
 ]
