@@ -72,5 +72,13 @@
     {
         "key": "ctrl+shift+alt+right",
         "command": "cursorWordPartRightSelect"
+    },
+    {
+        "key": "ctrl+n",
+        "command": "explorer.newFile"
+    },
+    {
+        "key": "ctrl+n",
+        "command": "-workbench.action.files.newUntitledFile"
     }
 ]
