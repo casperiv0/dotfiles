@@ -101,15 +101,13 @@
   "window.dialogStyle": "custom",
   "typescript.updateImportsOnFileMove.enabled": "always",
   "cSpell.language": "en,en-GB,en-US",
-  "json.schemas": [
-    {
-      "name": "vscode-expo-manifest",
-      "url": "file:///home/casper/.vscode-server/data/User/globalStorage/bycedric.vscode-expo/manifest-43.0.0.json",
-      "fileMatch": [
-        "app.json",
-        "app.config.json"
-      ]
-    }
-  ],
+  "material-icon-theme.files.associations": {
+    "*.docker-compose.yml": "docker"
+  },
+  "material-icon-theme.folders.associations": {
+    "workflows": "ci",
+    "ISSUE_TEMPLATE": "template",
+    "state": "context",
+  },
   "js/ts.implicitProjectConfig.strictNullChecks": true
 }
