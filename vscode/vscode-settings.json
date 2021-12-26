@@ -49,7 +49,7 @@
     "editor.defaultFormatter": "vscode.json-language-features"
   },
   "[xml]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "redhat.vscode-xml"
   },
   "[typescript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
@@ -87,18 +87,22 @@
     "Hoverable",
     "nocheck",
     "prefetch",
+    "roleplay",
     "URL's",
+    "Wakatime",
     "zyndicate"
   ],
+
   "editor.linkedEditing": true,
   "eslint.codeActionsOnSave.mode": "problems",
   "extensions.ignoreRecommendations": true,
   "javascript.preferences.quoteStyle": "double",
   "typescript.preferences.quoteStyle": "double",
+
   "files.eol": "\n",
-  "remote.WSL.server.connectThroughLocalhost": true,
+  "remote.WSL2.connectionMethod": "localhost",
+
   "material-icon-theme.showWelcomeMessage": false,
-  "window.dialogStyle": "custom",
   "typescript.updateImportsOnFileMove.enabled": "always",
   "cSpell.language": "en,en-GB,en-US",
   "material-icon-theme.files.associations": {
@@ -107,7 +111,8 @@
   "material-icon-theme.folders.associations": {
     "workflows": "ci",
     "ISSUE_TEMPLATE": "template",
-    "state": "context",
+    "state": "context"
   },
-  "js/ts.implicitProjectConfig.strictNullChecks": true
+  "js/ts.implicitProjectConfig.strictNullChecks": true,
+  "editor.formatOnSave": true
 }
