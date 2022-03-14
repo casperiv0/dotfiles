@@ -4,6 +4,7 @@ export GPG_TTY=$(tty)
 
 # Path to your oh-my-zsh installation.
 export ZSH="/home/casper/.oh-my-zsh"
+export PATH="$PATH:/mnt/c/Program Files/Mozilla Firefox"
 
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 ZSH_THEME="robbyrussell"
@@ -40,6 +41,8 @@ alias format="clear && npm run format"
 
 alias gs="git status"
 alias ga="git add ."
+alias ff="firefox.exe"
+alias expl="explorer.exe"
 
 
 # show my name bc why not :D
@@ -47,3 +50,10 @@ cfonts "CASPER" --align "left"
 
 # start in my directory
 cd /home/casper
+
+export EDITOR="code"
+export GIT_EDITOR="code"
+export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
+
+export DISPLAY=$(cat /etc/resolv.conf | grep nameserver | awk '{print $2}'):0
+export LIBGL_ALWAYS_INDIRECT=true

@@ -46,7 +46,7 @@
     "editor.defaultFormatter": "vscode.json-language-features"
   },
   "[xml]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "redhat.vscode-xml"
   },
   "[typescript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
@@ -83,7 +83,15 @@
   "files.eol": "\n",
   "remote.WSL2.connectionMethod": "localhost",
   "material-icon-theme.showWelcomeMessage": false,
-  "window.dialogStyle": "custom",
+  "material-icon-theme.files.associations": {
+    "*.docker-compose.yml": "docker"
+  },
+  "material-icon-theme.folders.associations": {
+    "workflows": "ci",
+    "ISSUE_TEMPLATE": "template",
+    "state": "context"
+  },
+  "js/ts.implicitProjectConfig.strictNullChecks": true,
   "typescript.updateImportsOnFileMove.enabled": "always",
   "cSpell.language": "en,en-GB,en-US",
   "gitlens.codeLens.includeSingleLineSymbols": true,
