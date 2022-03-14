@@ -4,16 +4,17 @@
   "workbench.iconTheme": "material-icon-theme",
   "editor.copyWithSyntaxHighlighting": false,
   "diffEditor.ignoreTrimWhitespace": false,
-  "workbench.editor.enablePreview": false,
-  "window.newWindowDimensions": "inherit",
+  "workbench.editor.enablePreview": true,
   "workbench.colorTheme": "GitHub Dark",
   "files.trimTrailingWhitespace": true,
   "editor.fontFamily": "Fira Code",
-  "editor.fontSize": 17,
-  "editor.tabSize": 2,
   "editor.suggest.preview": true,
+  "html.completion.attributeDefaultValue": "doublequotes",
+  "editor.tabSize": 2,
   "editor.lightbulb.enabled": false,
   "editor.detectIndentation": true,
+  "editor.fontSize": 17,
+  "editor.hover.enabled": true,
   "workbench.tips.enabled": false,
   "workbench.startupEditor": "none",
   "editor.gotoLocation.multipleReferences": "goto",
@@ -22,7 +23,9 @@
   "workbench.editor.enablePreviewFromQuickOpen": false,
   "editor.gotoLocation.multipleImplementations": "goto",
   "editor.gotoLocation.multipleTypeDefinitions": "goto",
-  "editor.suggest.localityBonus": true,
+  "debug.javascript.codelens.npmScripts": "never",
+  "editor.cursorSmoothCaretAnimation": true,
+  "editor.smoothScrolling": false,
   "prettier.trailingComma": "all",
   "prettier.singleQuote": false,
   "prettier.printWidth": 100,
@@ -57,22 +60,43 @@
   "[prisma]": {
     "editor.defaultFormatter": "Prisma.prisma"
   },
-  "[lua]": {
-    "editor.defaultFormatter": "Koihik.vscode-lua-format"
+  "[svelte]": {
+    "editor.defaultFormatter": "svelte.svelte-vscode"
   },
   "scm.providerCountBadge": "auto",
   "files.associations": {
     ".env": "dotenv",
     "*.md": "mdx"
   },
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/bower_components": true,
+    "**/coverage": true,
+    "**/dist": true,
+    "**/build": true,
+    "**/.build": true,
+    "**/.gh-pages": true
+  },
   "cSpell.userWords": [
-    "Hoverable",
-    "URL's",
+    "Bleeter",
     "cadv",
+    "Callsign",
     "caspertheghost",
     "citizenfx",
+    "Dompurify",
+    "driverslicense",
+    "ethnicitie",
+    "Formik",
+    "hastebin",
+    "Hoverable",
     "nocheck",
     "prefetch",
+    "roleplay",
+    "Snaily",
+    "sortablejs",
+    "TEXTFIELD",
+    "URL's",
+    "Wakatime",
     "zyndicate"
   ],
   "editor.linkedEditing": true,
@@ -83,6 +107,8 @@
   "files.eol": "\n",
   "remote.WSL2.connectionMethod": "localhost",
   "material-icon-theme.showWelcomeMessage": false,
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "cSpell.language": "en,en-GB,en-US",
   "material-icon-theme.files.associations": {
     "*.docker-compose.yml": "docker"
   },
@@ -92,14 +118,12 @@
     "state": "context"
   },
   "js/ts.implicitProjectConfig.strictNullChecks": true,
-  "typescript.updateImportsOnFileMove.enabled": "always",
-  "cSpell.language": "en,en-GB,en-US",
-  "gitlens.codeLens.includeSingleLineSymbols": true,
-  "gitlens.defaultDateFormat": "MMMM D, YYYY hh:mm",
-  "gitlens.defaultTimeFormat": "hh:mm",
-  "gitlens.defaultDateShortFormat": null,
-  "redhat.telemetry.enabled": false,
-  "svelte.enable-ts-plugin": true,
-  "editor.unicodeHighlight.ambiguousCharacters": false,
-  "workbench.experimental.layoutControl.type": "both"
+  "[lua]": {
+    "editor.defaultFormatter": "yinfei.luahelper"
+  },
+  "workbench.experimental.layoutControl.type": "toggles",
+  "workbench.experimental.layoutControl.enabled": true,
+  "[shellscript]": {
+    "editor.defaultFormatter": "foxundermoon.shell-format"
+  }
 }
