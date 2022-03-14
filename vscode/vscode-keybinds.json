@@ -80,5 +80,17 @@
     {
         "key": "ctrl+n",
         "command": "-workbench.action.files.newUntitledFile"
+    },
+    {
+        "key": "ctrl+shift+n",
+        "command": "explorer.newFolder"
+    },
+    {
+        "key": "ctrl+shift+n",
+        "command": "-workbench.action.newWindow"
+    },
+    {
+        "key": "ctrl+shift+p",
+        "command": "workbench.action.toggleAuxiliaryBar"
     }
 ]

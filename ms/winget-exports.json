@@ -1,83 +1,110 @@
 {
-	"$schema" : "https://aka.ms/winget-packages.schema.2.0.json",
-	"CreationDate" : "2021-07-09T19:52:10.408-00:00",
-	"Sources" :
-	[
+	"$schema": "https://aka.ms/winget-packages.schema.2.0.json",
+	"CreationDate": "2022-03-14T17:34:49.001-00:00",
+	"Sources": [
 		{
-			"Packages" :
-			[
+			"Packages": [
 				{
-					"PackageIdentifier" : "BraveSoftware.BraveBrowser"
+					"PackageIdentifier": "BraveSoftware.BraveBrowser"
 				},
 				{
-					"PackageIdentifier" : "Canonical.Ubuntu"
+					"PackageIdentifier": "Canonical.Ubuntu"
 				},
 				{
-					"PackageIdentifier" : "Discord.DiscordCanary"
+					"PackageIdentifier": "Discord.Discord"
 				},
 				{
-					"PackageIdentifier" : "Docker.DockerDesktop"
+					"PackageIdentifier": "Discord.Discord.Canary"
 				},
 				{
-					"PackageIdentifier" : "Git.Git"
+					"PackageIdentifier": "Docker.DockerDesktop"
 				},
 				{
-					"PackageIdentifier" : "Microsoft.WindowsTerminalPreview"
+					"PackageIdentifier": "Figma.Figma"
 				},
 				{
-					"PackageIdentifier" : "Mozilla.Firefox"
+					"PackageIdentifier": "flux.flux"
 				},
 				{
-					"PackageIdentifier" : "OBSProject.OBSStudio"
+					"PackageIdentifier": "Git.Git"
 				},
 				{
-					"PackageIdentifier" : "Postman.Postman"
+					"PackageIdentifier": "Microsoft.Edge"
 				},
 				{
-					"PackageIdentifier" : "Valve.Steam"
+					"PackageIdentifier": "Microsoft.EdgeWebView2Runtime"
 				},
 				{
-					"PackageIdentifier" : "RARLab.WinRAR"
+					"PackageIdentifier": "Microsoft.WindowsTerminal.Preview"
 				},
 				{
-					"PackageIdentifier" : "OpenJS.NodeJS"
+					"PackageIdentifier": "PostgreSQL.PostgreSQL"
 				},
 				{
-					"PackageIdentifier" : "Python.Python.3"
+					"PackageIdentifier": "Postman.Postman"
 				},
 				{
-					"PackageIdentifier" : "Microsoft.VC++2010Redist-x64"
+					"PackageIdentifier": "Valve.Steam"
 				},
 				{
-					"PackageIdentifier" : "Microsoft.VisualStudioCode.Insiders"
+					"PackageIdentifier": "RARLab.WinRAR"
 				},
 				{
-					"PackageIdentifier" : "Microsoft.VC++2012Redist-x86"
+					"PackageIdentifier": "ApacheFriends.Xampp"
 				},
 				{
-					"PackageIdentifier" : "Microsoft.PowerShell.Preview"
+					"PackageIdentifier": "Microsoft.VC++2015-2019Redist-x86"
 				},
 				{
-					"PackageIdentifier" : "Microsoft.VisualStudioCode"
+					"PackageIdentifier": "Microsoft.VC++2013Redist-x64"
 				},
 				{
-					"PackageIdentifier" : "Microsoft.PowerToys"
+					"PackageIdentifier": "Microsoft.VC++2010Redist-x64"
 				},
 				{
-					"PackageIdentifier" : "GitHub.cli"
+					"PackageIdentifier": "Microsoft.VC++2012Redist-x86"
 				},
 				{
-					"PackageIdentifier" : "Microsoft.VC++2012Redist-x64"
+					"PackageIdentifier": "OpenJS.NodeJS.LTS"
+				},
+				{
+					"PackageIdentifier": "Logitech.GHUB"
+				},
+				{
+					"PackageIdentifier": "Microsoft.dotnetRuntime.3-x64"
+				},
+				{
+					"PackageIdentifier": "Microsoft.VisualStudioCode"
+				},
+				{
+					"PackageIdentifier": "Apple.iTunes"
+				},
+				{
+					"PackageIdentifier": "Microsoft.PowerToys"
+				},
+				{
+					"PackageIdentifier": "Microsoft.VC++2013Redist-x86"
+				},
+				{
+					"PackageIdentifier": "Nvidia.GeForceExperience"
+				},
+				{
+					"PackageIdentifier": "Microsoft.VC++2010Redist-x86"
+				},
+				{
+					"PackageIdentifier": "Microsoft.VC++2012Redist-x64"
+				},
+				{
+					"PackageIdentifier": "Microsoft.dotnetRuntime.5-x64"
 				}
 			],
-			"SourceDetails" :
-			{
-				"Argument" : "https://winget.azureedge.net/cache",
-				"Identifier" : "Microsoft.Winget.Source_8wekyb3d8bbwe",
-				"Name" : "winget",
-				"Type" : "Microsoft.PreIndexed.Package"
+			"SourceDetails": {
+				"Argument": "https://winget.azureedge.net/cache",
+				"Identifier": "Microsoft.Winget.Source_8wekyb3d8bbwe",
+				"Name": "winget",
+				"Type": "Microsoft.PreIndexed.Package"
 			}
 		}
 	],
-	"WinGetVersion" : "1.0.11692"
+	"WinGetVersion": "1.3.431-preview"
 }

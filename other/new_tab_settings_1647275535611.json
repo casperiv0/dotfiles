@@ -1,19 +1,19 @@
 {
   "theme": "dark",
-  "backgroundUrl": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.pinimg.com%2Foriginals%2F8a%2Fab%2F03%2F8aab031f3c235b232d1550152f72541b.jpg&f=1&nofb=1",
+  "backgroundUrl": "https://512pixels.net/downloads/macos-wallpapers-6k/10-4-6k.jpg",
   "search": {
     "show": false,
     "engine": "https://duckduckgo.com?q=",
-    "newTab": true
+    "newTab": false
   },
   "weather": {
     "show": true,
-    "location": "Evergem",
+    "location": "",
     "unit": "metric"
   },
   "positions": {
     "greeting": 2,
-    "weather": 0
+    "weather": 1
   },
   "date": {
     "format": "MMM. do • HH:mm:ss"
@@ -33,10 +33,11 @@
         "faviconUrl": "https://preview.caspertheghost.me?url=https://github.githubassets.com/app-icon-512.png"
       },
       {
-        "url": "https://www.twitch.tv/jamiepinelive",
+        "url": "https://www.twitch.tv",
         "faviconUrl": "https://preview.caspertheghost.me?url=https://static.twitchcdn.net/assets/favicon-32-e29e246c157142c94346.png"
       }
     ],
-    "newTab": false
+    "newTab": false,
+    "enabled": true
   }
 }

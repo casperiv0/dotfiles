@@ -43,17 +43,6 @@
       "}"
     ]
   },
-  "Express router": {
-    "scope": "javascript",
-    "prefix": "erouter",
-    "body": [
-      "const router = require(\"express\").Router();",
-      "",
-      "$0",
-      "",
-      "module.exports = router;"
-    ]
-  },
   "Typescript Import react": {
     "scope": "javascriptreact, javascript, typescript, typescriptreact",
     "prefix": "react",
@@ -71,25 +60,5 @@
     "prefix": "env",
     "body": "process.env.${0}",
     "description": "Env"
-  },
-  "Document title": {
-    "scope": "javascript, javascriptreact, typescript, typescriptreact",
-    "prefix": "title",
-    "body": "document.title = \"${0}\"",
-    "description": "Set Document Title"
-  },
-  "React Redux Action": {
-    "scope": "typescript, typescriptreact",
-    "prefix": "action",
-    "body": [
-      "export const ${functionName} = (${data}: unknown) => async (dispatch: Dispatch<IDispatch>): Promise<void> => {",
-      "  try {",
-      "    ${0}",
-      "  } catch (e) {",
-      "    console.error(e);",
-      "  }",
-      "};"
-    ],
-    "description": "Creates a redux action"
   }
 }
