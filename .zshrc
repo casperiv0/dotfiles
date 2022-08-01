@@ -43,7 +43,8 @@ alias gs="git status"
 alias ga="git add ."
 alias ff="firefox.exe"
 alias expl="explorer.exe"
-
+alias gitp="git push"
+alias '$'=''
 
 # show my name bc why not :D
 cfonts "CASPER" --align "left"
@@ -57,3 +58,19 @@ export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 
 export DISPLAY=$(cat /etc/resolv.conf | grep nameserver | awk '{print $2}'):0
 export LIBGL_ALWAYS_INDIRECT=true
+
+export FLYCTL_INSTALL="/home/casper/.fly"
+export PATH="$FLYCTL_INSTALL/bin:$PATH"
+
+export PNPM_HOME="/home/casper/.local/share/pnpm"
+export PATH="$PNPM_HOME:$PATH"
+
+export DENO_INSTALL="/home/casper/.deno"
+export PATH="$DENO_INSTALL/bin:$PATH"
+
+# bun completions
+[ -s "/home/casper/.bun/_bun" ] && source "/home/casper/.bun/_bun"
+
+# Bun
+export BUN_INSTALL="/home/casper/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
