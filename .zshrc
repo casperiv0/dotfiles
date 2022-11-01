@@ -57,7 +57,7 @@ export EDITOR="code"
 export GIT_EDITOR="code"
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 
-export DISPLAY=$(cat /etc/resolv.conf | grep nameserver | awk '{print $2}'):0
+export DISPLAY=:0
 export LIBGL_ALWAYS_INDIRECT=true
 
 export FLYCTL_INSTALL="/home/casper/.fly"
@@ -75,3 +75,9 @@ export PATH="$DENO_INSTALL/bin:$PATH"
 # Bun
 export BUN_INSTALL="/home/casper/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
+
+
+# pnpm
+export PNPM_HOME="/home/casper/.local/share/pnpm"
+export PATH="$PNPM_HOME:$PATH"
+# pnpm end
