@@ -2,40 +2,39 @@
 # VSCode extensions
 
 PACKAGES=(
+   ms-vscode-remote.remote-wsl
+
+   usernamehw.errorlens
+   Prisma.prisma
+   PKief.material-icon-theme
+   ms-azuretools.vscode-docker
+   mikestead.dotenv
+   GitHub.github-vscode-theme
+   formulahendry.auto-close-tag
+   formulahendry.auto-rename-tag
+   astro-build.astro-vscode
    bierner.markdown-preview-github-styles
    bradlc.vscode-tailwindcss
+   BriteSnow.vscode-toggle-quotes
    bungcip.better-toml
-   byCedric.vscode-expo
-   christian-kohler.npm-intellisense
+   Cardinal90.multi-cursor-case-preserve
    christian-kohler.path-intellisense
-   DavidAnson.vscode-markdownlint
    dbaeumer.vscode-eslint
    eamodio.gitlens
    ecmel.vscode-html-css
-   eg2.vscode-npm-script
    esbenp.prettier-vscode
-   foxundermoon.shell-format
-   GraphQL.vscode-graphql
-   IronGeek.vscode-env
+   GitHub.copilot
    jasonnutter.search-node-modules
-   jeremyrajan.vscode-lebab
    meganrogge.template-string-converter
-   ms-azuretools.vscode-docker
    Prisma.prisma
-   redhat.vscode-xml
    ritwickdey.LiveServer
-   searKing.preview-vscode
    streetsidesoftware.code-spell-checker
    svelte.svelte-vscode
-   tamj0rd2.ts-quickfixes-extension
-   thebanhammer.cfx-lua
+   Sword.vscode-surround
+   unifiedjs.vscode-remark
    WakaTime.vscode-wakatime
    wix.vscode-import-cost
-   yinfei.luahelper
    yzhang.markdown-all-in-one
-   GitHub.github-vscode-theme
-   usernamehw.errorlens
-   mikestead.dotenv
 )
 
 sudo code --install-extension ${PACKAGES[@]}
