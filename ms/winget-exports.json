@@ -5,43 +5,16 @@
 		{
 			"Packages": [
 				{
-					"PackageIdentifier": "BraveSoftware.BraveBrowser"
-				},
-				{
-					"PackageIdentifier": "Canonical.Ubuntu"
-				},
-				{
 					"PackageIdentifier": "Discord.Discord"
-				},
-				{
-					"PackageIdentifier": "Discord.Discord.Canary"
 				},
 				{
 					"PackageIdentifier": "Docker.DockerDesktop"
 				},
 				{
-					"PackageIdentifier": "Figma.Figma"
-				},
-				{
-					"PackageIdentifier": "flux.flux"
-				},
-				{
 					"PackageIdentifier": "Git.Git"
 				},
 				{
-					"PackageIdentifier": "Microsoft.Edge"
-				},
-				{
-					"PackageIdentifier": "Microsoft.EdgeWebView2Runtime"
-				},
-				{
 					"PackageIdentifier": "Microsoft.WindowsTerminal.Preview"
-				},
-				{
-					"PackageIdentifier": "PostgreSQL.PostgreSQL"
-				},
-				{
-					"PackageIdentifier": "Postman.Postman"
 				},
 				{
 					"PackageIdentifier": "Valve.Steam"
@@ -50,52 +23,16 @@
 					"PackageIdentifier": "RARLab.WinRAR"
 				},
 				{
-					"PackageIdentifier": "ApacheFriends.Xampp"
-				},
-				{
-					"PackageIdentifier": "Microsoft.VC++2015-2019Redist-x86"
-				},
-				{
-					"PackageIdentifier": "Microsoft.VC++2013Redist-x64"
-				},
-				{
-					"PackageIdentifier": "Microsoft.VC++2010Redist-x64"
-				},
-				{
-					"PackageIdentifier": "Microsoft.VC++2012Redist-x86"
-				},
-				{
 					"PackageIdentifier": "OpenJS.NodeJS.LTS"
-				},
-				{
-					"PackageIdentifier": "Logitech.GHUB"
-				},
-				{
-					"PackageIdentifier": "Microsoft.dotnetRuntime.3-x64"
 				},
 				{
 					"PackageIdentifier": "Microsoft.VisualStudioCode"
 				},
 				{
-					"PackageIdentifier": "Apple.iTunes"
-				},
-				{
 					"PackageIdentifier": "Microsoft.PowerToys"
 				},
 				{
-					"PackageIdentifier": "Microsoft.VC++2013Redist-x86"
-				},
-				{
 					"PackageIdentifier": "Nvidia.GeForceExperience"
-				},
-				{
-					"PackageIdentifier": "Microsoft.VC++2010Redist-x86"
-				},
-				{
-					"PackageIdentifier": "Microsoft.VC++2012Redist-x64"
-				},
-				{
-					"PackageIdentifier": "Microsoft.dotnetRuntime.5-x64"
 				}
 			],
 			"SourceDetails": {
