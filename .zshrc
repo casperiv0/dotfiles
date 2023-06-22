@@ -45,6 +45,8 @@ alias ga="git add ."
 alias ff="firefox.exe"
 alias expl="explorer.exe"
 alias gitp="git push"
+alias gitst="git status"
+alias gitpl="git pull"
 alias '$'=''
 
 # show my name bc why not :D
@@ -79,5 +81,8 @@ export PATH="$BUN_INSTALL/bin:$PATH"
 
 # pnpm
 export PNPM_HOME="/home/casper/.local/share/pnpm"
-export PATH="$PNPM_HOME:$PATH"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
 # pnpm end

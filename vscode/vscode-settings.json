@@ -23,47 +23,34 @@
   "workbench.editor.enablePreviewFromQuickOpen": false,
   "editor.gotoLocation.multipleImplementations": "goto",
   "editor.gotoLocation.multipleTypeDefinitions": "goto",
-  "debug.javascript.codelens.npmScripts": "never",
-  "editor.cursorSmoothCaretAnimation": true,
+  "editor.cursorSmoothCaretAnimation": "on",
   "editor.smoothScrolling": false,
   "prettier.trailingComma": "all",
   "prettier.singleQuote": false,
   "prettier.printWidth": 100,
   "prettier.tabWidth": 2,
   "prettier.semi": true,
-  "discord.largeImage": "✨ Editing a {LANG} file",
-  "discord.largeImageIdling": "⏱ Idling",
   "editor.suggest.showStatusBar": true,
-  "discord.detailsEditing": "💻 Editing {file_name} in {workspace}",
-  "discord.lowerDetailsEditing": "📄 line: {current_line}/{total_lines} - Branch: {git_branch} - {file_size}",
-  "[jsonc]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[javascript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[javascriptreact]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[json]": {
-    "editor.defaultFormatter": "vscode.json-language-features"
-  },
-  "[xml]": {
-    "editor.defaultFormatter": "redhat.vscode-xml"
-  },
-  "[typescript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[html]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[prisma]": {
-    "editor.defaultFormatter": "Prisma.prisma"
-  },
-  "[svelte]": {
-    "editor.defaultFormatter": "svelte.svelte-vscode"
-  },
   "scm.providerCountBadge": "auto",
+  "tailwindCSS.experimental.classRegex": [["cva\\(([^)]*)\\)", "[\"'`]([^\"'`]*).*?[\"'`]"]],
+  "editor.linkedEditing": true,
+  "eslint.codeActionsOnSave.mode": "problems",
+  "extensions.ignoreRecommendations": true,
+  "javascript.preferences.quoteStyle": "double",
+  "typescript.preferences.quoteStyle": "double",
+  "files.eol": "\n",
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "cSpell.language": "en,en-GB,en-US",
+  "js/ts.implicitProjectConfig.strictNullChecks": true,
+  "prettier.prettierPath": "./node_modules/prettier",
+  "material-icon-theme.files.associations": {
+    "*.docker-compose.yml": "docker"
+  },
+  "material-icon-theme.folders.associations": {
+    "workflows": "ci",
+    "ISSUE_TEMPLATE": "template",
+    "state": "context"
+  },
   "files.associations": {
     ".env": "dotenv",
     "*.md": "mdx"
@@ -99,31 +86,34 @@
     "Wakatime",
     "zyndicate"
   ],
-  "editor.linkedEditing": true,
-  "eslint.codeActionsOnSave.mode": "problems",
-  "extensions.ignoreRecommendations": true,
-  "javascript.preferences.quoteStyle": "double",
-  "typescript.preferences.quoteStyle": "double",
-  "files.eol": "\n",
-  "remote.WSL2.connectionMethod": "localhost",
-  "material-icon-theme.showWelcomeMessage": false,
-  "typescript.updateImportsOnFileMove.enabled": "always",
-  "cSpell.language": "en,en-GB,en-US",
-  "material-icon-theme.files.associations": {
-    "*.docker-compose.yml": "docker"
+  "[dockerfile]": {
+    "editor.defaultFormatter": "ms-azuretools.vscode-docker"
   },
-  "material-icon-theme.folders.associations": {
-    "workflows": "ci",
-    "ISSUE_TEMPLATE": "template",
-    "state": "context"
+  "[toml]": {
+    "editor.defaultFormatter": "tamasfe.even-better-toml"
   },
-  "js/ts.implicitProjectConfig.strictNullChecks": true,
-  "[lua]": {
-    "editor.defaultFormatter": "yinfei.luahelper"
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "workbench.experimental.layoutControl.type": "toggles",
-  "workbench.experimental.layoutControl.enabled": true,
-  "[shellscript]": {
-    "editor.defaultFormatter": "foxundermoon.shell-format"
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[prisma]": {
+    "editor.defaultFormatter": "Prisma.prisma"
+  },
+  "[svelte]": {
+    "editor.defaultFormatter": "svelte.svelte-vscode"
   }
 }

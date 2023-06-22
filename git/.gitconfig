@@ -3,7 +3,7 @@
   st = status
   p = push
   pl = pull
-	br = branch
+  br = branch
 
 [commit]
   gpgsign = true
@@ -36,3 +36,6 @@
   line-numbers = true
   navigate = true
   side-by-side = true
+
+[push]
+  autoSetupRemote = true
