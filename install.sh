@@ -35,7 +35,7 @@ npm -v
 
 # install global packages
 
-sh -c "$(wget -qO- https://raw.githubusercontent.com/Dev-CasperTheGhost/dotfiles/main/npm/packages.sh)"
+sh -c "$(wget -qO- https://raw.githubusercontent.com/casperiv0/dotfiles/main/npm/packages.sh)"
 
 
 # install zsh
@@ -62,7 +62,7 @@ git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-m
 # setup .zshrc stuff
 cd ~
 
-curl https://raw.githubusercontent.com/Dev-CasperTheGhost/dotfiles/main/.zshrc > ~/.zshrc
+curl https://raw.githubusercontent.com/casperiv0/dotfiles/main/.zshrc > ~/.zshrc
 
 echo "\nINFO: Installed correct .zshrc\n"
 

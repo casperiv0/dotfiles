@@ -27,8 +27,8 @@
   program = gpg
 
 [user]
-  name = Dev-CasperTheGhost
-  email = 53900565+Dev-CasperTheGhost@users.noreply.github.com
+  name = casperiv0
+  email = 53900565+casperiv0@users.noreply.github.com
   signingkey = 222759ADB7DDBDA0
 
 [delta]
