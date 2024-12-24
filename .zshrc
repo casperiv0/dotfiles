@@ -6,6 +6,12 @@ export GPG_TTY=$(tty)
 export ZSH="/home/casper/.oh-my-zsh"
 export PATH="$PATH:/mnt/c/Program Files/Mozilla Firefox"
 
+# Linux Brew
+export PATH="/home/linuxbrew/.linuxbrew/bin:$PATH"
+# Nodejs
+export PATH="/home/linuxbrew/.linuxbrew/opt/node@22/bin:$PATH"
+
+
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 ZSH_THEME="robbyrussell"
 
@@ -61,23 +67,6 @@ export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 
 export DISPLAY=:0
 export LIBGL_ALWAYS_INDIRECT=true
-
-export FLYCTL_INSTALL="/home/casper/.fly"
-export PATH="$FLYCTL_INSTALL/bin:$PATH"
-
-export PNPM_HOME="/home/casper/.local/share/pnpm"
-export PATH="$PNPM_HOME:$PATH"
-
-export DENO_INSTALL="/home/casper/.deno"
-export PATH="$DENO_INSTALL/bin:$PATH"
-
-# bun completions
-[ -s "/home/casper/.bun/_bun" ] && source "/home/casper/.bun/_bun"
-
-# Bun
-export BUN_INSTALL="/home/casper/.bun"
-export PATH="$BUN_INSTALL/bin:$PATH"
-
 
 # pnpm
 export PNPM_HOME="/home/casper/.local/share/pnpm"
