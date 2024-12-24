@@ -1,5 +1,6 @@
-sudo apt-get update
+cd ~
 
+sudo apt-get update
 
 sudo apt-get install \
    apt-transport-https \
@@ -12,47 +13,32 @@ sudo apt-get install \
 
 sudo apt-get upgrade -y
 
-# install git
-sudo apt install git
+# install brew
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
-echo "\nINFO: Installed git\n"
-
-# install nodejs v16
-cd ~
-curl -sL https://deb.nodesource.com/setup_16.x -o nodesource_setup.sh
-
-sudo bash nodesource_setup.sh
-
-sudo apt install nodejs -y
-
-cd ~ && rm -f nodesource_setup.sh
-
-echo "\nINFO: Installed node and npm\n"
+# GIT
+brew install git node@22
 
 # check the version
 node -v
 npm -v
+git -v
 
 # install global packages
-
 sh -c "$(wget -qO- https://raw.githubusercontent.com/casperiv0/dotfiles/main/npm/packages.sh)"
-
 
 # install zsh
 sudo apt install zsh
 
+# Set default shell
 chsh -s $(which zsh)
 
 # oh-my-zsh
 sh -c "$(wget -qO- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
-echo "\nINFO: Installed oh-my-zsh\n"
-
 # build essentials
 sudo apt install build-essential -y
 sudo apt install gcc g++ make -y
-
-echo "\nINFO: Installed build-essential\n"
 
 # clone zsh stuff
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
@@ -64,17 +50,8 @@ cd ~
 
 curl https://raw.githubusercontent.com/casperiv0/dotfiles/main/.zshrc > ~/.zshrc
 
-echo "\nINFO: Installed correct .zshrc\n"
-
-# install brew
-
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-
 # install github cli
-
 brew install gh
-
-echo "\nInstalled github cli and Homebrew\n"
 
 # docker install
 sudo apt-get remove docker docker-engine docker.io containerd runc
@@ -86,8 +63,6 @@ curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o 
 sudo apt-get update
 
 sudo apt-get install docker-ce docker-ce-cli containerd.io
-
-echo "\nInstalled Docker\n"
 
 # git stuff
 git config --global alias.ch checkout
