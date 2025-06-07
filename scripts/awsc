@@ -1,0 +1,113 @@
+#!/bin/bash
+
+region=eu-west-1
+
+# Detect if the script is being sourced
+(return 0 2>/dev/null) && sourced=1 || sourced=0
+
+# Set the profile name
+if [ -n "$1" ]; then
+  profile_name="$1"
+else
+  clear
+
+  # Get list of AWS profiles and use fzf for selection if no profile is provided
+  profiles=$(aws configure list-profiles)
+  profile_name=$(echo "$profiles" | fzf --height ~100% --border=none --prompt "Select AWS Profile: " --pointer ">" --marker " " --color=fg:7,bg:-1,hl:14,fg+:3,bg+:-1,hl+:3,pointer:3,marker:3,prompt:3,spinner:3)
+
+  if [ -z "$profile_name" ]; then
+    echo "No profile selected. Exiting."
+    if [ $sourced -eq 0 ]; then
+      exit 1
+    else
+      return 1
+    fi
+  fi
+fi
+
+if [ -z "$profile_name" ]; then
+  echo "Usage: $0 <aws-profile> or set AWS_PROFILE environment variable."
+  if [ $sourced -eq 0 ]; then
+    exit 1
+  else
+    return 1
+  fi
+fi
+
+export AWS_PROFILE="$profile_name"
+
+echo "Exporting AWS credentials for profile '$profile_name'"
+
+# Run the command to export SSO credentials
+sso_export=$(aws-sso-creds export --profile "$profile_name" 2>&1)
+sso_export_status=$?
+
+if [ $sso_export_status -ne 0 ] || [[ "$sso_export" == *"error"* ]] || [[ "$sso_export" == *"Error"* ]] || [ -z "$sso_export" ]; then
+  echo "SSO credentials export failed. Attempting to log in..."
+  aws sso login --profile "$profile_name"
+  sso_export=$(aws-sso-creds export --profile "$profile_name" 2>&1)
+  sso_export_status=$?
+  if [ $sso_export_status -ne 0 ] || [[ "$sso_export" == *"error"* ]] || [[ "$sso_export" == *"Error"* ]] || [ -z "$sso_export" ]; then
+    echo "Failed to export SSO credentials after login. Exiting."
+    if [ $sourced -eq 0 ]; then
+      exit 1
+    else
+      return 1
+    fi
+  fi
+fi
+
+# Extract the access key, secret key, and session token from the export output
+aws_access_key_id=$(echo "$sso_export" | grep AWS_ACCESS_KEY_ID | cut -d= -f2)
+aws_secret_access_key=$(echo "$sso_export" | grep AWS_SECRET_ACCESS_KEY | cut -d= -f2)
+aws_session_token=$(echo "$sso_export" | grep AWS_SESSION_TOKEN | cut -d= -f2)
+
+# Create or update the AWS credentials file
+creds_file=~/.aws/credentials
+
+if [ -f "$creds_file" ]; then
+  # Create a temporary file to store updated credentials
+  tmp_file=$(mktemp)
+
+  # Flag to track if the profile exists in the credentials file
+  profile_exists=false
+
+  while read -r line; do
+    if echo "$line" | grep -q "^\[$profile_name\]$"; then
+      # Found the profile, update the credentials
+      profile_exists=true
+      echo "$line" >> "$tmp_file"
+      echo "aws_access_key_id=$aws_access_key_id" >> "$tmp_file"
+      echo "aws_secret_access_key=$aws_secret_access_key" >> "$tmp_file"
+      echo "aws_session_token=$aws_session_token" >> "$tmp_file"
+      echo "region=$region" >> "$tmp_file"
+
+      # Skip the existing credentials for the profile
+      while read -r sub_line; do
+        if [ "$sub_line" = "" ]; then
+          break
+        fi
+      done
+    else
+      echo "$line" >> "$tmp_file"
+    fi
+  done < "$creds_file"
+
+  # If the profile does not exist, append the credentials to the temporary file
+  if [ "$profile_exists" = false ]; then
+    echo -e "\n[$profile_name]" >> "$tmp_file"
+    echo "aws_access_key_id=$aws_access_key_id" >> "$tmp_file"
+    echo "aws_secret_access_key=$aws_secret_access_key" >> "$tmp_file"
+    echo "aws_session_token=$aws_session_token" >> "$tmp_file"
+    echo "region=$region" >> "$tmp_file"
+  fi
+
+  # Replace the original credentials file with the updated file
+  mv "$tmp_file" "$creds_file"
+else
+  # Create a new credentials file
+  echo -e "[$profile_name]\naws_access_key_id=$aws_access_key_id\naws_secret_access_key=$aws_secret_access_key\naws_session_token=$aws_session_token\nregion=$region" > "$creds_file"
+fi
+
+check_aws_login
+echo "AWS credentials file updated with credentials for profile '$profile_name'"

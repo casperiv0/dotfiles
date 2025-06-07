@@ -1,0 +1,8 @@
+export AWS_REGION=eu-west-1
+export AWS_PROFILE=casper-sandbox
+export NODE_AUTH_TOKEN=""
+
+export ZSH_THEME_AWS_PROFILE_PREFIX="%F{003} ❓ ["
+export ZSH_THEME_AWS_PROFILE_SUFFIX="]"
+export ZSH_THEME_AWS_REGION_PREFIX="["
+export ZSH_THEME_AWS_REGION_SUFFIX="]"
